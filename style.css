@@ -9,17 +9,29 @@ body{
     background-size: cover;
 }   
 
-.form-login{
-    background: blue;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 260px;
-    height: 300px;
+label, h1, input{
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+.form-login{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    width: 250px;
+    height: 300px;
+    box-shadow: 0 8px 32px rgba(255, 255, 255, 0.1);
+    gap: 20px;
 }
 
 .form-login h1{
@@ -28,12 +40,13 @@ body{
     text-align: center;
 }
 
+
 .campo{
     display: flex;
     flex-direction: column;
-    text-align: left;
 }
 .campo label{
+    width: 230px;
     font-size: 17px;
     padding-top: 20px;
     padding-bottom: 5px;
@@ -45,14 +58,27 @@ input{
     border: none;
 }
 
+.campo-button{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
 input[type="submit"]{
-    background: black;
-    color: white;
+    text-align: center;
+    background: rgb(255, 255, 255, 0.2);
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 20px;
+    margin-top: 30px;
+    transition: all 0.3s ease;
 }
 
 input[type="submit"]:hover{
-    background: #333;
+    background: #ffffff;
+    color: #2196F3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
 }
