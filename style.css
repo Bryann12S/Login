@@ -1,0 +1,55 @@
+body{
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}   
+
+.form-login{
+    background: blue;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-login h1{
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.campo label{
+    font-size: 17px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+input{
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type="submit"]{
+    background: black;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover{
+    background: #333;
+}
