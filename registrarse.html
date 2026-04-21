@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Registro de Usuario</h1>
-    <form>
+    
+    <form onsubmit="validateForm(event);" class="form-login">
+        <h1>Registro de Usuario</h1>
         <div class="campo">
             <label for="nuevo-usuario">Nuevo Usuario</label>
             <input type="text" id="nuevo-usuario" name="nuevo-usuario" required>
@@ -18,6 +20,8 @@
         </div>
         <div class="campo-button">
             <input type="submit" value="Registrarse">
+            <p>¿Ya tienes una cuenta?</p>
+            <a href="login.html">Ingresa en tu cuenta</a>
         </div>
     </form>
 
